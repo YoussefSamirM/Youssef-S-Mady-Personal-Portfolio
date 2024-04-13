@@ -1279,7 +1279,18 @@ nav .elements label .icon div {
 footer {
   background-color: #121212;
   text-align: center;
+  position: relative;
   padding: 0 30px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 200vh;
+  height: 100%;
+  background-color: #121212;
+  left: -200%;
+  z-index: -1;
 }
 
 footer .footlogo {
